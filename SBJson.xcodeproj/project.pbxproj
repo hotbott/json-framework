@@ -773,6 +773,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = (
 					include/,
 					"$(BUILT_PRODUCTS_DIR)/usr/local/lib/include/",
@@ -790,6 +794,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/include/";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
